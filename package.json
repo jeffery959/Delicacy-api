@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/api.js",
-    "start": "node ./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "start": "node src/api.js"
   },
   "author": "\"Jeffery Aaron\"",
   "license": "ISC",
