@@ -14,7 +14,7 @@ const MongoDB_URI = process.env.MONGODB_URI
 //Middleware
 app.use(bodyParser.json())
 app.use(cookieParser())
-app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
+app.use(cors({ credentials: true, origin: 'https://delicacy-project.netlify.app' }));
 //dbConfig
 mongoose.connect(`${MongoDB_URI}`,{
     useNewUrlParser: true,
