@@ -2,11 +2,11 @@
   "name": "delicacy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "start.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/api.js",
-    "start": "node src/api.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "author": "\"Jeffery Aaron\"",
   "license": "ISC",
