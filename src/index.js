@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
 //dbConfig
-mongoose.connect(MongoDB_URI,{
+mongoose.connect(`${MongoDB_URI}`,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

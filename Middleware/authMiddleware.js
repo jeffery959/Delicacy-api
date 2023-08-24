@@ -10,7 +10,7 @@ const authMiddleware = async (req, res, next) => {
   const token = authHeader.replace('Bearer ', '');
 
   try {
-    const decoded = jwt.verify(token, process.env.SecretKey);
+    const decoded = jwt.verify(token, `${process.env.SecretKey}`);
     const user = await User.findById(decoded.userId);
 
     if (!user) {
